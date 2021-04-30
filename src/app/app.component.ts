@@ -7,18 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  color: String = 'red';
-
-  generateRandom(): String {
-    return Math.floor(Math.random() * 255).toString(16);
-  }
-
-  colorHex(): String {
-    return (
-      '#' +
-      this.generateRandom() +
-      this.generateRandom() +
-      this.generateRandom()
-    );
-  }
 }
