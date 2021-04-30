@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colores.component.css'],
 })
 export class ColoresComponent implements OnInit {
+  colorLocal: String;
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -15,11 +17,11 @@ export class ColoresComponent implements OnInit {
   }
 
   colorHex(): String {
-    return (
+    this.colorLocal =
       '#' +
       this.generateRandom() +
       this.generateRandom() +
-      this.generateRandom()
-    );
+      this.generateRandom();
+    return this.colorLocal;
   }
 }
