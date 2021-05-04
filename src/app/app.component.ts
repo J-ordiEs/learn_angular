@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  valor1;
+  valor2;
 }
